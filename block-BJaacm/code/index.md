@@ -18,18 +18,18 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true because in the code , user = newUser ;
+- `user === newUser;`// true because they are same strict equality doesn't make difference
+- `user.name === newUser.name;`//true beacuse both are taking value by refrence so memory point are same
+- `user.name == newUser.name;`// equality doesn't make difference we are dealing with the same thing.
+- `user.sibling == newUser.sibling;`// true beacause both are taking value by refrence so memory point are same
+- `user.sibling === newUser.sibling;`//equality doesn't make difference we are dealing with the same thing.
+- `user.sibling == allBrothers;` // false because it is stored in memory location both roots are different so they can't be the samm thimg 
+- `user.sibling === allBrothers;`// false because it is stored in memory location both roots are different so they can't be the samm thimg 
+- `brothersCopy === allBrothers;`//false because it is stored in memory location both roots are different so they can't be the samm thimg 
+- `brothersCopy == allBrothers;`//false because it is stored in memory location both roots are different so they can't be the samm thimg 
+- `brothersCopy == user.sibling;`// true beacause both are taking value by refrence so memory point are same
+- `brothersCopy === user.sibling;`// true beacause both are taking value by refrence so memory point are same
+- `brothersCopy[0] === user.sibling[0];`// true beacause both are taking value by refrence so memory point are same
+- `brothersCopy[1] === user.sibling[1];`// true beacause both are taking value by refrence so memory point are same
+- `user.sibling[1] === newUser.sibling[1];`// true beacause both are taking value by refrence so memory point are same
