@@ -11,15 +11,16 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
-- What is the value of obj? // answer
-- `obj == newObj`
-- `obj === newObj`
-- `user === newObj`
-- `user == newObj`
-- `user == obj`
-- `arr == arr2`
-- `arr === arr2`
+- `[10] === [10]`// false because array always store itself in different memory location address
+- What is the value of obj? // value of the object will be  {name: 'Arya'}
+- `obj == newObj` // false beacuse different memory location.
+- `obj === newObj`// strict equality doesn't make difference
+- `user === newObj`// false beacuse different memory location.
+- `user == newObj`// equality doesn't make difference
+ `user == obj`// true they are refrencing the same the thing
+- `arr == arr2`//true they are refrencing the same the thing
+- `arr === arr2`//equality doesn't make difference
+
 
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
@@ -46,6 +47,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. output
-console.log(user.brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); //1. true
+console.log(user.brothers.length === brothers.length); //2. true
 ```
